@@ -4,7 +4,7 @@ import sys
 
 
 def get(product, environment=None):
-    path = "/Users/petergallagher/PycharmProjects/Appgate/creds.json"
+    path = "./creds.json"
     infile = open(path, "r").read()
     credsjson = json.loads(infile)
     if not environment:
